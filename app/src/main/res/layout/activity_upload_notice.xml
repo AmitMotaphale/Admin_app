@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:background="#FFF5E4"
+    android:layout_height="match_parent"
+    tools:context=".UploadNotice">
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/addPdf"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#F9F7F7"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circle_purple"
+                    android:padding="15dp"
+                    android:src="@drawable/baseline_cloud_upload_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/lightGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Select PDF"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#1B262C"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="60dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/NoticeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:hint="Notice Title" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/NoticeImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:scaleType="centerCrop"
+                android:background="#EEEEEE"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/UploadNoticeButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#F67280"
+                app:cornerRadius="10dp"
+                android:text="Upload Notice"
+                android:textSize="20dp"
+                android:textAllCaps="false" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

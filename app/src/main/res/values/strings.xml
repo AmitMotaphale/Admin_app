@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Admin App</string>
+    <string name="dancingscriptmedium">Dancing Script Medium</string>
+    <string name="bold" tools:ignore="ReferenceType">@font/notobold</string>
+    <string name="light" tools:ignore="ReferenceType">@font/notolight</string>
+    <string name="regular" tools:ignore="ReferenceType">@font/notoregular</string>
+    <string name="font" tools:ignore="ReferneceType">@string/dancingscriptmedium</string>
+</resources>

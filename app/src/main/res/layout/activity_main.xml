@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF5E4"
+    android:layout_marginTop="0dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="120dp"
+        android:text="BMSITM CIRCULARS"
+        android:textAlignment="center"
+        android:textColor="#1B262C"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/dancingscriptmedium"
+        android:text="&quot;One-Stop Source for College Circulars&quot;"
+        android:textAlignment="center"
+        android:textColor="#252A34"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="189dp"
+        android:layout_height="212dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:padding="8dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/addNotice"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#F9F7F7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circle_green"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_notice" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/lightGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Upload Notice"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/deleteNotice"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#F9F7F7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circle_red"
+                    android:padding="15dp"
+                    android:src="@drawable/baseline_delete_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/lightGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Delete Notice"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

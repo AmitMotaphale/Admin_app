@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginTop="20dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="47dp"
+            android:src="@drawable/ic_pdf" />
+
+        <TextView
+            android:id="@+id/ebookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DSA"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:fontFamily="@string/regular"
+            tools:ignore="InvalidId" />
+
+        <ImageView
+            android:id="@+id/ebookDownload"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_download_24"
+            android:layout_marginLeft="-50dp"/>
+
+        <ImageView
+            android:id="@+id/ebookDelete"
+            android:layout_width="30dp"
+            android:layout_height="47dp"
+            android:src="@drawable/baseline_delete_2"
+            android:layout_marginLeft="-80dp"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
